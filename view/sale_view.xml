@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+    <record id="view_sale_addendafemsa_form" model="ir.ui.view">
+      <field name="name">addendafemsa.form</field>
+      <field name="model">sale.order</field>
+      <field name="type">form</field>
+      <field name="inherit_id" ref="sale.view_order_form" />
+      <field name="arch" type="xml" >
+        <xpath expr="//form/sheet/notebook" position="inside" >
+          <page string="Addenda Femsa" >
+            <group>
+             <field name="entrance" />
+			 <field name="currency_local" />
+			 <field name="remission" />
+			 <field name="purchase_order" />
+			 <field name="consumption_order" />
+			</group>
+          </page >
+        </xpath>
+      </field>
+    </record>
+  </data>
+</openerp>
